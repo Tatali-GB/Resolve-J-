@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolve Já | Cadastre-se</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+</head>
+
+<body class="body-começo">
+    <main class="container-cadas">
+        <div class="cadastro-box">
+            <h1>Cadastre-se</h1>
+            <form id="cadastroForm">
+                <input type="text" id="nome" placeholder="Nome Completo" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="telefone" placeholder="Telefone" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" required>
+                <div class="privacidade">
+                    <input type="checkbox" id="termos" required>
+                    <label for="termos">
+                        <a href="">Li e estou ciente da Política de Privacidade e Segurança</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn-principal" onclick="window.location.href='pag-inicial.html'">
+                    Cadastrar
+                </button>
+            </form>
+            <p class="login-link">
+                Já tem uma conta?
+                <a href="entrar.html" id="mostrarLogin">Entre</a>
+            </p>
+        </div>
+
+        <!-- LADO DIREITO -->
+        <section class="informacoes">
+            <div class="conteudo-direito">
+                <!-- LOGO ORIGINAL -->
+                <img src="midia/Logo Branca.png" alt="Resolve Já" class="logo-cadas">
+                <div class="beneficios">
+                    <div class="beneficio">
+                        <span class="check">✅</span>
+                        <span>Profissionais Verificados</span>
+                    </div>
+                    <div class="beneficio">
+                        <span class="check">✅</span>
+                        <span>Atendimento Rapido</span>
+                    </div>
+                    <div class="beneficio">
+                        <span class="check">✅</span>
+                        <span>Perto de Você</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
